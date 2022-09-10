@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            .font {
+                font-size: 36pt
+            }
+        </style>
+        <script language="javascript">
+            function bnClick() {
+                var text = document.getElementById("text").value;
+                window.webkit.messageHandlers.Test.postMessage(text);
+            }
+        
+            function setLabelTitle(title) {
+                alert(title)
+                var label = document.getElementById("label");
+                label.innerHTML = title;
+            }
+        </script>
+    </head>
+    <body>
+        <div><input id="text" type="text" class="font"/></div><p/>
+        <div><input type="button" class="font" value="Button" onClick="bnClick()"/></div><p/>
+        <div id="label" class="font"></div>
+    </body>
+</html>

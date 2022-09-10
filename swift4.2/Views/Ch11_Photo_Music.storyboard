@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VMD-UL-XSJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="N68-wp-XPu">
+            <objects>
+                <viewController id="VMD-UL-XSJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nwf-HU-4Pd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="FZE-gt-Hoo">
+                                <rect key="frame" x="60" y="144" width="334" height="618"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooU-L5-ZCg">
+                                        <rect key="frame" x="0.0" y="0.0" width="261" height="77.5"/>
+                                        <state key="normal" title="11-1 偵測裝置上是否配備相機與閃光燈"/>
+                                        <connections>
+                                            <segue destination="PYV-aP-IVt" kind="show" id="uMN-mX-6NV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5l-4w-Lkd">
+                                        <rect key="frame" x="0.0" y="77.5" width="171" height="77"/>
+                                        <state key="normal" title="11-2 開啟相機拍照並存檔"/>
+                                        <connections>
+                                            <segue destination="beZ-LO-bsw" kind="show" id="ldh-oG-XVu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UE-F5-JWe">
+                                        <rect key="frame" x="0.0" y="154.5" width="187" height="77.5"/>
+                                        <state key="normal" title="11-3 從相本中挑選一張照片"/>
+                                        <connections>
+                                            <segue destination="EKB-2o-mhQ" kind="show" id="27f-hj-4p2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bm-No-N4c">
+                                        <rect key="frame" x="0.0" y="232" width="202" height="77"/>
+                                        <state key="normal" title="11-4 一次取得相本中所有照片"/>
+                                        <connections>
+                                            <segue destination="u8K-TX-1iP" kind="show" id="s48-hD-Fyv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYf-Mv-tRu">
+                                        <rect key="frame" x="0.0" y="309" width="169" height="77.5"/>
+                                        <state key="normal" title="11-5 播放App內建的音樂"/>
+                                        <connections>
+                                            <segue destination="an7-za-LyL" kind="show" id="Vd4-XC-Gdh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22M-DY-29w">
+                                        <rect key="frame" x="0.0" y="386.5" width="187" height="77"/>
+                                        <state key="normal" title="11-6 顯示目前音樂播放進度"/>
+                                        <connections>
+                                            <segue destination="H1u-6f-9JX" kind="show" id="kxn-OI-WPv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06x-O5-sn6">
+                                        <rect key="frame" x="0.0" y="463.5" width="171" height="77.5"/>
+                                        <state key="normal" title="11-7 播放已經存在的音樂"/>
+                                        <connections>
+                                            <segue destination="Jtv-2U-pjv" kind="show" id="c83-mG-S2o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDT-gb-h0m">
+                                        <rect key="frame" x="0.0" y="541" width="218" height="77"/>
+                                        <state key="normal" title="11-8 取得目前播放中的歌曲資訊"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gRK-Cx-AoI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gRK-Cx-AoI" firstAttribute="trailing" secondItem="FZE-gt-Hoo" secondAttribute="trailing" constant="20" id="CBj-p9-n7S"/>
+                            <constraint firstItem="FZE-gt-Hoo" firstAttribute="top" secondItem="gRK-Cx-AoI" secondAttribute="top" constant="100" id="RAS-Yb-h6W"/>
+                            <constraint firstItem="FZE-gt-Hoo" firstAttribute="leading" secondItem="gRK-Cx-AoI" secondAttribute="leading" constant="60" id="hQG-Ph-LZP"/>
+                            <constraint firstItem="gRK-Cx-AoI" firstAttribute="bottom" secondItem="FZE-gt-Hoo" secondAttribute="bottom" constant="100" id="lyc-KI-Kao"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQm-Ia-3E3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184" y="483"/>
+        </scene>
+        <!--Ch11 Camera Flash-->
+        <scene sceneID="3We-gw-Guv">
+            <objects>
+                <viewController id="PYV-aP-IVt" customClass="Ch11_Camera_Flash" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uRt-FR-Rjr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ee5-Xf-Tog"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WfQ-QH-R8J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIv-jm-UfQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="141"/>
+        </scene>
+        <!--Ch11 Play Music-->
+        <scene sceneID="7zK-fR-4l1">
+            <objects>
+                <viewController id="an7-za-LyL" customClass="Ch11_PlayMusic" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zws-Zs-flQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uyz-oX-BSL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KnC-Jc-TYn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mhs-GI-168" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="813"/>
+        </scene>
+        <!--Ch11 Music Progress-->
+        <scene sceneID="Rti-B0-f6t">
+            <objects>
+                <viewController id="H1u-6f-9JX" customClass="Ch11_MusicProgress" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wns-BL-daI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="309-c5-RkG">
+                                <rect key="frame" x="148" y="407" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="H1u-6f-9JX" eventType="valueChanged" id="Xhp-TD-6sw"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2vL-LH-Akd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Spu-UX-Ns8"/>
+                    <connections>
+                        <outlet property="slider" destination="309-c5-RkG" id="Pw0-eM-jsu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbX-dR-5XM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1658" y="813"/>
+        </scene>
+        <!--Ch11 Play Library Music-->
+        <scene sceneID="kEr-yz-GYR">
+            <objects>
+                <viewController id="Jtv-2U-pjv" customClass="Ch11_Play_Library_Music" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bJI-P4-RFA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcW-9W-EUk">
+                                <rect key="frame" x="184" y="659" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onClick:" destination="Jtv-2U-pjv" eventType="touchUpInside" id="bwb-qp-Ve4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TF7-oU-NMQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KCo-Mh-VzE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qu1-TQ-S0U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2367" y="813"/>
+        </scene>
+        <!--Ch11 Get Music Info-->
+        <scene sceneID="ij9-ZM-cas">
+            <objects>
+                <viewController id="PL1-IS-Jtp" customClass="Ch11_Get_Music_Info" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="48A-Rc-Wsd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bS4-OV-lsL">
+                                <rect key="frame" x="184" y="728" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="nextMusic:" destination="PL1-IS-Jtp" eventType="touchUpInside" id="6Ob-pV-qY6"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C7X-2f-Y0s">
+                                <rect key="frame" x="87" y="282" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uom-CS-XEi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="C7X-2f-Y0s" id="9d9-nX-hN2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZnS-tu-Va3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3080" y="813"/>
+        </scene>
+        <!--Ch11 Camera Save Photo-->
+        <scene sceneID="tcM-99-hcG">
+            <objects>
+                <viewController id="beZ-LO-bsw" customClass="Ch11_Camera_SavePhoto" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u4C-CX-IjY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MxQ-3E-6qK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="REI-df-Dvl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hu-TR-rVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="140"/>
+        </scene>
+        <!--Ch11 Choose Photo-->
+        <scene sceneID="Wdu-Rc-ly9">
+            <objects>
+                <viewController id="EKB-2o-mhQ" customClass="Ch11_Choose_Photo" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2VG-a9-Dne">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIq-pP-bx8">
+                                <rect key="frame" x="184" y="181" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onClick:" destination="EKB-2o-mhQ" eventType="touchUpInside" id="P2O-xh-ZqM"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q4J-SA-hs2">
+                                <rect key="frame" x="87" y="412" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="and-Qx-4HO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n7r-wR-VHN"/>
+                    <connections>
+                        <outlet property="imageView" destination="Q4J-SA-hs2" id="dFs-tB-Arj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="68j-Cg-lhN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2368" y="141"/>
+        </scene>
+        <!--Ch11 Choose All Photos-->
+        <scene sceneID="IlI-76-LjA">
+            <objects>
+                <viewController id="u8K-TX-1iP" customClass="Ch11_Choose_All_Photos" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xcr-BE-5ah">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EJz-DF-vZW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lto-fe-hpi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJv-x8-D9l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3080" y="141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

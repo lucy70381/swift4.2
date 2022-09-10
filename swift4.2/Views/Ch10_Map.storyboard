@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0B3-FJ-UeY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="M7h-AM-6X0">
+            <objects>
+                <viewController id="0B3-FJ-UeY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vGN-Cv-PHq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="czY-RJ-I5l">
+                                <rect key="frame" x="60" y="144" width="334" height="618"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ac7-VA-y53">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="51.5"/>
+                                        <state key="normal" title="10-1 在地圖上顯示目前位置"/>
+                                        <connections>
+                                            <segue destination="LPa-uz-FsP" kind="show" id="mO9-bQ-rF6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csi-Sy-oab">
+                                        <rect key="frame" x="0.0" y="51.5" width="189" height="51.5"/>
+                                        <state key="normal" title="10-2 在地圖上釘一根大頭針"/>
+                                        <connections>
+                                            <segue destination="p8J-nQ-40Q" kind="show" id="dzV-Ew-r7s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yn7-FS-kg9">
+                                        <rect key="frame" x="0.0" y="103" width="144" height="51.5"/>
+                                        <state key="normal" title="10-3 改變大頭針顏色"/>
+                                        <connections>
+                                            <segue destination="4nl-LO-0QF" kind="show" id="Ft1-g9-cTZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4H-9K-xe2">
+                                        <rect key="frame" x="0.0" y="154.5" width="190" height="51.5"/>
+                                        <state key="normal" title="10-4 將大頭針改為自訂圖片"/>
+                                        <connections>
+                                            <segue destination="PVR-dH-pa8" kind="show" id="qSc-ZR-7ah"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQD-Yr-arz">
+                                        <rect key="frame" x="0.0" y="206" width="163" height="51.5"/>
+                                        <state key="normal" title="10-5  拖放與刪除大頭針"/>
+                                        <connections>
+                                            <segue destination="Pmj-eo-gCh" kind="show" id="3L1-fe-V0g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TP3-fU-Myg">
+                                        <rect key="frame" x="0.0" y="257.5" width="146" height="51.5"/>
+                                        <state key="normal" title="10-6 設定Callout面板"/>
+                                        <connections>
+                                            <segue destination="UfU-xl-R7Q" kind="show" id="RQe-xU-GsN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-Yw-Uqa">
+                                        <rect key="frame" x="0.0" y="309" width="158" height="51.5"/>
+                                        <state key="normal" title="10-7 在地圖上標示區域"/>
+                                        <connections>
+                                            <segue destination="4qd-9b-2Gh" kind="show" id="cb5-ub-bDx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBb-3I-Ybf">
+                                        <rect key="frame" x="0.0" y="360.5" width="205" height="51.5"/>
+                                        <state key="normal" title="10-8 切換衛星或混合類型地圖"/>
+                                        <connections>
+                                            <segue destination="xqL-dy-hmB" kind="show" id="a8b-s3-Uzc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsB-8p-pKh">
+                                        <rect key="frame" x="0.0" y="412" width="67" height="51.5"/>
+                                        <state key="normal" title="10-9 導航"/>
+                                        <connections>
+                                            <segue destination="sj4-9U-Ny1" kind="show" id="Y4G-rI-eSY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16R-aA-w58">
+                                        <rect key="frame" x="0.0" y="463.5" width="94" height="51.5"/>
+                                        <state key="normal" title="10-10 3D地圖"/>
+                                        <connections>
+                                            <segue destination="ZbE-I2-s9x" kind="show" id="GnJ-03-xFa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MD-7d-g5n">
+                                        <rect key="frame" x="0.0" y="515" width="148" height="51.5"/>
+                                        <state key="normal" title="10-11 將座標轉成地址"/>
+                                        <connections>
+                                            <segue destination="R2n-Jh-6I0" kind="show" id="5vm-fg-thy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPi-NO-Tw6">
+                                        <rect key="frame" x="0.0" y="566.5" width="150" height="51.5"/>
+                                        <state key="normal" title="10-12 將地址轉成座標"/>
+                                        <connections>
+                                            <segue destination="TcG-gf-Zzo" kind="show" id="Bk2-sO-tg2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rfh-Sl-oej"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rfh-Sl-oej" firstAttribute="trailing" secondItem="czY-RJ-I5l" secondAttribute="trailing" constant="20" id="3Xm-4n-94q"/>
+                            <constraint firstItem="Rfh-Sl-oej" firstAttribute="bottom" secondItem="czY-RJ-I5l" secondAttribute="bottom" constant="100" id="ebN-cP-3DQ"/>
+                            <constraint firstItem="czY-RJ-I5l" firstAttribute="top" secondItem="Rfh-Sl-oej" secondAttribute="top" constant="100" id="th0-1r-tal"/>
+                            <constraint firstItem="czY-RJ-I5l" firstAttribute="leading" secondItem="Rfh-Sl-oej" secondAttribute="leading" constant="60" id="vbT-R9-Wzo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebw-CV-i4j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-565" y="437"/>
+        </scene>
+        <!--Ch10 Display Position-->
+        <scene sceneID="HZi-qg-rlz">
+            <objects>
+                <viewController id="LPa-uz-FsP" customClass="Ch10_DisplayPosition" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="knb-BW-xAI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvM-U6-hxM">
+                                <rect key="frame" x="0.0" y="100" width="414" height="708"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OAe-ph-htv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OAe-ph-htv" firstAttribute="bottom" secondItem="DvM-U6-hxM" secondAttribute="bottom" id="OiV-9x-0mg"/>
+                            <constraint firstItem="DvM-U6-hxM" firstAttribute="top" secondItem="OAe-ph-htv" secondAttribute="top" constant="100" id="bQz-Sk-Nbt"/>
+                            <constraint firstItem="OAe-ph-htv" firstAttribute="trailing" secondItem="DvM-U6-hxM" secondAttribute="trailing" id="cg4-6h-rMU"/>
+                            <constraint firstItem="DvM-U6-hxM" firstAttribute="leading" secondItem="OAe-ph-htv" secondAttribute="leading" id="uHv-6x-ttZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8LM-vD-3cc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqi-G1-5KL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="58"/>
+        </scene>
+        <!--Ch10 Annotation-->
+        <scene sceneID="jRQ-Hk-Obc">
+            <objects>
+                <viewController id="p8J-nQ-40Q" customClass="Ch10_Annotation" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R2t-ML-1lp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3TL-Ml-CFr">
+                                <rect key="frame" x="0.0" y="100" width="414" height="708"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9XT-rQ-fMz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3TL-Ml-CFr" firstAttribute="top" secondItem="9XT-rQ-fMz" secondAttribute="top" constant="100" id="1vD-IF-8qY"/>
+                            <constraint firstItem="9XT-rQ-fMz" firstAttribute="bottom" secondItem="3TL-Ml-CFr" secondAttribute="bottom" id="Goo-QQ-Zma"/>
+                            <constraint firstItem="3TL-Ml-CFr" firstAttribute="leading" secondItem="9XT-rQ-fMz" secondAttribute="leading" id="t7m-cR-QTq"/>
+                            <constraint firstItem="9XT-rQ-fMz" firstAttribute="trailing" secondItem="3TL-Ml-CFr" secondAttribute="trailing" id="yQN-KR-kRf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="U1N-TE-PbC"/>
+                    <connections>
+                        <outlet property="mapView" destination="3TL-Ml-CFr" id="utv-KD-Jfe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2uB-mQ-0HE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917" y="58"/>
+        </scene>
+        <!--Ch10 Annoation Color-->
+        <scene sceneID="QdD-hU-pU7">
+            <objects>
+                <viewController id="4nl-LO-0QF" customClass="Ch10_AnnoationColor" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aBT-qE-g9s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="J3C-LX-d4b">
+                                <rect key="frame" x="0.0" y="100" width="414" height="708"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4nl-LO-0QF" id="S6h-q8-6yy"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="41o-BA-jnG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="41o-BA-jnG" firstAttribute="trailing" secondItem="J3C-LX-d4b" secondAttribute="trailing" id="58K-3p-hQh"/>
+                            <constraint firstItem="J3C-LX-d4b" firstAttribute="leading" secondItem="41o-BA-jnG" secondAttribute="leading" id="DpE-MV-YfJ"/>
+                            <constraint firstItem="41o-BA-jnG" firstAttribute="bottom" secondItem="J3C-LX-d4b" secondAttribute="bottom" id="PMN-cI-5lO"/>
+                            <constraint firstItem="J3C-LX-d4b" firstAttribute="top" secondItem="41o-BA-jnG" secondAttribute="top" constant="100" id="Pus-hu-glY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ff7-7v-nVi"/>
+                    <connections>
+                        <outlet property="mapView" destination="J3C-LX-d4b" id="FZa-f9-cGT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKn-tQ-8CP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638" y="59"/>
+        </scene>
+        <!--Ch10 Annotaion Image-->
+        <scene sceneID="cQS-Vf-adB">
+            <objects>
+                <viewController id="PVR-dH-pa8" customClass="Ch10_AnnotaionImage" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eLv-gY-2SS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nQU-wo-6It">
+                                <rect key="frame" x="0.0" y="100" width="414" height="708"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PVR-dH-pa8" id="mMh-jF-t4V"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="puw-wz-jNx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="puw-wz-jNx" firstAttribute="trailing" secondItem="nQU-wo-6It" secondAttribute="trailing" id="3Ve-xZ-QlM"/>
+                            <constraint firstItem="puw-wz-jNx" firstAttribute="bottom" secondItem="nQU-wo-6It" secondAttribute="bottom" id="CPL-8i-pl9"/>
+                            <constraint firstItem="nQU-wo-6It" firstAttribute="top" secondItem="puw-wz-jNx" secondAttribute="top" constant="100" id="NHB-BS-m0d"/>
+                            <constraint firstItem="nQU-wo-6It" firstAttribute="leading" secondItem="puw-wz-jNx" secondAttribute="leading" id="RdX-cA-Bxj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y4I-jX-QuU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2P-5P-XbA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2346" y="58"/>
+        </scene>
+        <!--Ch10 Drag Remove Annotation-->
+        <scene sceneID="cJJ-Dw-bPJ">
+            <objects>
+                <viewController id="Pmj-eo-gCh" customClass="Ch10_Drag_Remove_Annotation" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xox-vh-Ie2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0Cu-Fv-ldm">
+                                <rect key="frame" x="0.0" y="100" width="414" height="708"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Pmj-eo-gCh" id="lCq-v1-Uvd"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qyA-sn-7QV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qyA-sn-7QV" firstAttribute="trailing" secondItem="0Cu-Fv-ldm" secondAttribute="trailing" id="9cp-0q-dyr"/>
+                            <constraint firstItem="0Cu-Fv-ldm" firstAttribute="top" secondItem="qyA-sn-7QV" secondAttribute="top" constant="100" id="DGf-V1-IaX"/>
+                            <constraint firstItem="0Cu-Fv-ldm" firstAttribute="leading" secondItem="qyA-sn-7QV" secondAttribute="leading" id="N3b-2V-3CF"/>
+                            <constraint firstItem="qyA-sn-7QV" firstAttribute="bottom" secondItem="0Cu-Fv-ldm" secondAttribute="bottom" id="TGR-e4-VaI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QdJ-Pf-ytO"/>
+                    <connections>
+                        <outlet property="mapView" destination="0Cu-Fv-ldm" id="i0e-s8-PhJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJX-0F-874" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3067" y="59"/>
+        </scene>
+        <!--Ch10 Callout-->
+        <scene sceneID="PFS-x7-hOj">
+            <objects>
+                <viewController id="UfU-xl-R7Q" customClass="Ch10_Callout" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eQl-zu-5gg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nQw-h5-HyD">
+                                <rect key="frame" x="0.0" y="100" width="414" height="708"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UfU-xl-R7Q" id="Ng4-W0-bZf"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BQo-L7-DS0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BQo-L7-DS0" firstAttribute="bottom" secondItem="nQw-h5-HyD" secondAttribute="bottom" id="L1C-bM-a3U"/>
+                            <constraint firstItem="nQw-h5-HyD" firstAttribute="leading" secondItem="BQo-L7-DS0" secondAttribute="leading" id="fQI-fs-qOz"/>
+                            <constraint firstItem="nQw-h5-HyD" firstAttribute="top" secondItem="BQo-L7-DS0" secondAttribute="top" constant="100" id="h57-rY-Irc"/>
+                            <constraint firstItem="BQo-L7-DS0" firstAttribute="trailing" secondItem="nQw-h5-HyD" secondAttribute="trailing" id="izJ-Ge-jkk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jaB-Gc-ouk"/>
+                    <connections>
+                        <outlet property="mapView" destination="nQw-h5-HyD" id="C4b-sc-d2m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHa-sA-uMh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3777" y="59"/>
+        </scene>
+        <!--Ch10 Overlay Area-->
+        <scene sceneID="tc7-o6-IsU">
+            <objects>
+                <viewController id="4qd-9b-2Gh" customClass="Ch10_OverlayArea" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7nT-bs-Azg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fpA-3T-bT4">
+                                <rect key="frame" x="0.0" y="100" width="414" height="708"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4qd-9b-2Gh" id="qp7-cW-zrS"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fwh-th-pHw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fwh-th-pHw" firstAttribute="trailing" secondItem="fpA-3T-bT4" secondAttribute="trailing" id="AsU-eT-WQB"/>
+                            <constraint firstItem="fpA-3T-bT4" firstAttribute="leading" secondItem="fwh-th-pHw" secondAttribute="leading" id="GKR-KC-u4H"/>
+                            <constraint firstItem="fwh-th-pHw" firstAttribute="bottom" secondItem="fpA-3T-bT4" secondAttribute="bottom" id="OKe-zT-xyB"/>
+                            <constraint firstItem="fpA-3T-bT4" firstAttribute="top" secondItem="fwh-th-pHw" secondAttribute="top" constant="100" id="eF5-nK-F4x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zHa-tX-Vxb"/>
+                    <connections>
+                        <outlet property="mapView" destination="fpA-3T-bT4" id="url-xm-k5r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8i-OD-hKI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200" y="744"/>
+        </scene>
+        <!--Ch10 Map Type-->
+        <scene sceneID="8CA-RB-hng">
+            <objects>
+                <viewController id="xqL-dy-hmB" customClass="Ch10_MapType" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jBb-Hd-H5E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5Dh-Fk-a4p">
+                                <rect key="frame" x="0.0" y="100" width="414" height="708"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QXd-HW-zlZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Dh-Fk-a4p" firstAttribute="leading" secondItem="QXd-HW-zlZ" secondAttribute="leading" id="1K3-H8-1Ab"/>
+                            <constraint firstItem="QXd-HW-zlZ" firstAttribute="bottom" secondItem="5Dh-Fk-a4p" secondAttribute="bottom" id="2YG-OM-R7Y"/>
+                            <constraint firstItem="QXd-HW-zlZ" firstAttribute="trailing" secondItem="5Dh-Fk-a4p" secondAttribute="trailing" id="Fo5-zr-5Eo"/>
+                            <constraint firstItem="5Dh-Fk-a4p" firstAttribute="top" secondItem="QXd-HW-zlZ" secondAttribute="top" constant="100" id="wEk-U7-S6q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kCN-eq-vYk"/>
+                    <connections>
+                        <outlet property="mapView" destination="5Dh-Fk-a4p" id="hMD-CV-wzx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27l-Ld-ufk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="744"/>
+        </scene>
+        <!--Ch10 Routes-->
+        <scene sceneID="dlR-p6-blQ">
+            <objects>
+                <viewController id="sj4-9U-Ny1" customClass="Ch10_Routes" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3W2-2O-eEd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="raq-Qp-u23"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RAw-XI-Q6i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5h8-WC-EqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638" y="744"/>
+        </scene>
+        <!--Ch103D Map-->
+        <scene sceneID="ok5-pv-DqX">
+            <objects>
+                <viewController id="ZbE-I2-s9x" customClass="Ch10_3DMap" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fhG-Dn-0S2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rSW-rU-22c">
+                                <rect key="frame" x="0.0" y="100" width="414" height="708"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p1B-gU-R83"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rSW-rU-22c" firstAttribute="top" secondItem="p1B-gU-R83" secondAttribute="top" constant="100" id="Ab2-uD-1b5"/>
+                            <constraint firstItem="rSW-rU-22c" firstAttribute="leading" secondItem="p1B-gU-R83" secondAttribute="leading" id="QcB-D5-grY"/>
+                            <constraint firstItem="p1B-gU-R83" firstAttribute="trailing" secondItem="rSW-rU-22c" secondAttribute="trailing" id="Ymi-S1-gsM"/>
+                            <constraint firstItem="p1B-gU-R83" firstAttribute="bottom" secondItem="rSW-rU-22c" secondAttribute="bottom" id="gqy-c3-3PM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LVm-I4-pcm"/>
+                    <connections>
+                        <outlet property="mapView" destination="rSW-rU-22c" id="ou1-5f-jqX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8BU-Tm-FxM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2345" y="744"/>
+        </scene>
+        <!--Ch10 Location To Address-->
+        <scene sceneID="lq4-Hk-fgb">
+            <objects>
+                <viewController id="R2n-Jh-6I0" customClass="Ch10_Location_To_Address" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n7s-eD-Qsf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="muq-yC-lNs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g0T-E2-v9h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5d-R8-TVp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3067" y="744"/>
+        </scene>
+        <!--Ch10 Address To Location-->
+        <scene sceneID="EAe-8q-qPq">
+            <objects>
+                <viewController id="TcG-gf-Zzo" customClass="Ch10_Address_To_Location" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="825-S4-V0S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BPA-Op-FqN">
+                                <rect key="frame" x="0.0" y="100" width="414" height="708"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr9-Lx-bXN">
+                                <rect key="frame" x="12" y="62" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="搜尋郵局"/>
+                                <connections>
+                                    <action selector="onClick:" destination="TcG-gf-Zzo" eventType="touchUpInside" id="pzE-fP-3Ee"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xE2-yL-MIw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BPA-Op-FqN" firstAttribute="leading" secondItem="xE2-yL-MIw" secondAttribute="leading" id="6pg-jg-RYF"/>
+                            <constraint firstItem="xE2-yL-MIw" firstAttribute="trailing" secondItem="BPA-Op-FqN" secondAttribute="trailing" id="UM4-9H-kNb"/>
+                            <constraint firstItem="BPA-Op-FqN" firstAttribute="top" secondItem="xE2-yL-MIw" secondAttribute="top" constant="100" id="YV2-4q-L4M"/>
+                            <constraint firstItem="xE2-yL-MIw" firstAttribute="bottom" secondItem="BPA-Op-FqN" secondAttribute="bottom" id="cW5-2v-hQE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="y3d-H4-klL"/>
+                    <connections>
+                        <outlet property="mapView" destination="BPA-Op-FqN" id="si0-Ln-Nzd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMI-D9-IbU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3777" y="744"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

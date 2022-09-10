@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t6I-LV-bug">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My View Controller-->
+        <scene sceneID="4Ee-ZB-ZVe">
+            <objects>
+                <viewController id="t6I-LV-bug" customClass="MyViewController" customModule="swift4_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kiG-eJ-Lxd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qEj-qN-U7o">
+                                <rect key="frame" x="20" y="144" width="374" height="618"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpm-kV-dGS">
+                                        <rect key="frame" x="162" y="0.0" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-YV-FD3">
+                                        <rect key="frame" x="137.5" y="50" width="99" height="121.5"/>
+                                        <state key="normal" title="返回 並印出str"/>
+                                        <connections>
+                                            <segue destination="RYp-fZ-rJ9" kind="unwind" identifier="unwind_vc_to_my_vc" unwindAction="unwindFor:" id="c6r-Cc-1jp"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyP-za-Lil">
+                                        <rect key="frame" x="2.5" y="171.5" width="369" height="446.5"/>
+                                        <mutableString key="text">透過Storyboard Reference Navigate 並傳值 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue_vc_to_myvc" {
+            let vc = segue.destination as! MyViewController
+            vc.str = "hello"
+        }
+}
+     返回 並印出str
+@IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
+        if unwindSegue.identifier == "unwind_vc_to_my_vc" {
+            let vc = unwindSegue.source as! MyViewController
+            if let str = vc.str {
+                print(str)
+            }
+        }
+}</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vvQ-kB-11y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vvQ-kB-11y" firstAttribute="bottom" secondItem="qEj-qN-U7o" secondAttribute="bottom" constant="100" id="530-wj-jyo"/>
+                            <constraint firstItem="qEj-qN-U7o" firstAttribute="top" secondItem="vvQ-kB-11y" secondAttribute="top" constant="100" id="H5s-KC-HM4"/>
+                            <constraint firstItem="qEj-qN-U7o" firstAttribute="leading" secondItem="vvQ-kB-11y" secondAttribute="leading" constant="20" id="nOh-Te-Hoq"/>
+                            <constraint firstItem="vvQ-kB-11y" firstAttribute="trailing" secondItem="qEj-qN-U7o" secondAttribute="trailing" constant="20" id="uxH-BG-B6a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZQ5-Od-gsg"/>
+                    <connections>
+                        <outlet property="label" destination="Jpm-kV-dGS" id="tuX-2V-mvj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yCA-wr-39b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="RYp-fZ-rJ9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="789.85507246376812" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
